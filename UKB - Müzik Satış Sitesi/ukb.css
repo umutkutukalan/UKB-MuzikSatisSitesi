@@ -1,0 +1,124 @@
+*{box-sizing: border-box;}
+body{
+    margin: 0px;
+    background-color: thistle;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 150px;
+    background-color: #fff;
+}
+.main-header_logo{
+  text-decoration: none;
+  color: black;
+  font-size: 28px;
+  border-bottom: 2px solid #f88b76;
+  padding-left: 5px;
+  border-left: 2px solid #f88b76;
+  
+}
+.main-header_logo:hover{
+  font-size: 30px;
+  transition: .3s;
+}
+.main-header_logo:active{
+  font-size: 26px;
+  transition: .2s;
+}
+.search-form {
+    display: flex;
+    align-items: center;
+    padding-left: 90px;
+}
+  
+.search-form input[type="text"] {
+    padding: 10px;
+    border: 2px solid #f88b76;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 530px;
+}
+  
+.search-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f88b76;
+    color: #fff;
+    cursor: pointer;
+    transition: .1s;
+    width: 100px;
+}
+  
+.search-form button:hover {
+    background-color: #fff;
+    color: #f88b76;
+    border: 2px solid #f88b76;
+    border-radius: 10px;
+}
+.main-header-nav{
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 64px);
+}
+.main-header-nav_items{
+    list-style: none;
+    display: inline-block;
+}
+.main-header-nav_item a{
+    text-decoration: none;
+    color: black;
+}
+.main-header-nav_item a:hover{
+    font-size: 15px;
+    color: #f88b76;
+    transition: .2s;
+}
+.main-header-nav_item a:active{
+    font-size: 16px;
+    color: black;
+    transition: .2s;
+}
+
+/* ÜRÜNLER */
+#liste{
+    padding: 15px 150px 0px 150px;
+}
+.container{
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: stretch;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    border: 2px solid brown;
+    border-radius: 10px;
+    flex-basis: 20%;
+}
+.product img{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.product-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.product-details h4{
+    font-size: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
